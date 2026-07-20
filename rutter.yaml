@@ -1,0 +1,11 @@
+version: 1
+name: Followingseas Rutter
+scope: organization
+paths:
+  conventions: conventions
+  charts: charts
+repositories:
+  - id: wake
+    remote: https://github.com/followingseas/wake
+  - id: pilot
+    remote: https://github.com/followingseas/pilot
