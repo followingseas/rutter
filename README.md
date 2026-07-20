@@ -29,6 +29,4 @@
 
 ---
 
-<div align="center">
-<sub>Part of <a href="https://github.com/followingseas">Followingseas</a> — fair winds and following seas for your AI voyages.</sub>
-</div>
+<sub>Part of <a href="https://github.com/followingseas">Followingseas</a></sub>
