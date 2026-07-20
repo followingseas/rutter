@@ -28,6 +28,22 @@
 
 초기 구축 중입니다. 규약과 지도가 채워지는 대로 이 README의 목차가 갱신됩니다.
 
+- `rutter.yaml` — Pilot이 읽는 manifest
+- `charts/projects.md` — 조직 저장소 조망 지도
+
+## Pilot으로 사용하기
+
+이 저장소는 [Pilot](https://github.com/followingseas/pilot)이 읽는 **레퍼런스 rutter 인스턴스**입니다. `repositories/`에 클론하지 않아도, 어떤 프로젝트 위치에서든 이 지침서를 AI 에이전트에 연결할 수 있습니다.
+
+```bash
+pilot connect https://github.com/followingseas/rutter --id followingseas
+cd <어느 프로젝트든>
+pilot context          # 적용 규약 확인
+pilot init             # 프로젝트에 선언 파일·스텁 생성
+```
+
+자기 조직의 rutter를 만들려면 이 저장소의 구조와 `rutter.yaml`을 본보기로 삼으면 됩니다.
+
 ---
 
 <sub>Part of <a href="https://github.com/followingseas">Followingseas</a></sub>
