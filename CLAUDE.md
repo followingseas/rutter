@@ -1,15 +1,12 @@
 # rutter — AI 에이전트 지침
 
-이 저장소는 Followingseas 조직의 공용 지침서이자, 조직 프로젝트를 담는 워크스페이스 루트다. AI 에이전트는 다음을 따른다.
+이 저장소는 Followingseas 조직의 공용 지침서다. AI 에이전트는 다음을 따른다.
 
-## 워크스페이스 구조 (repositories/)
+## 저장소 관리
 
-- 조직의 모든 프로젝트(개별 레포지토리)는 `repositories/` 하위에서 각각 관리한다
-- 각 프로젝트는 독립된 git 레포지토리로, `repositories/<프로젝트명>/` 경로에 클론한다
-- rutter의 git은 지침 문서와 메타 파일만 관리한다 (`.gitignore`, `README.md`, `CLAUDE.md`, `conventions/`, `charts/`, `repositories/.gitkeep`)
+- rutter의 git은 지침 문서와 메타 파일만 관리한다 (`.gitignore`, `README.md`, `rutter.yaml`, `CLAUDE.md`, `conventions/`, `charts/`)
 - `.gitignore`는 전체 무시(`/*`) 후 관리 대상만 선택적으로 허용하는 구조다. **사용자가 명시적으로 요청하지 않는 한 절대 수정하지 않는다**
-- 하위 프로젝트 파일을 rutter의 git에 포함시키려는 시도(`.gitignore` 수정, `git add` 등)를 하지 않는다
-- 하위 프로젝트의 커밋/푸시는 해당 프로젝트 디렉토리에서 `git remote -v`로 원격을 확인한 뒤 개별적으로 수행한다
+- 조직 프로젝트는 이 저장소 밑에 클론하지 않는다 — 각 프로젝트는 임의 위치에서 [Pilot](https://github.com/followingseas/pilot)으로 이 지침서를 연결받는다 (`pilot connect` / `pilot init`)
 
 ## 이 저장소에서 작업할 때
 
