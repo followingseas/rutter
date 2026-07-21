@@ -32,7 +32,7 @@
 
 ## Pilot으로 사용하기
 
-이 저장소는 [Pilot](https://github.com/followingseas/pilot)이 읽는 **레퍼런스 rutter 인스턴스**입니다. `repositories/`에 클론하지 않아도, 어떤 프로젝트 위치에서든 이 지침서를 AI 에이전트에 연결할 수 있습니다.
+이 저장소는 [Pilot](https://github.com/followingseas/pilot)이 읽는 **레퍼런스 rutter 인스턴스**입니다. 프로젝트가 어디에 클론돼 있든 이 지침서를 AI 에이전트에 연결할 수 있습니다.
 
 ```bash
 pilot connect https://github.com/followingseas/rutter --id followingseas
