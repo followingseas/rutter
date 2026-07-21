@@ -1,12 +1,8 @@
-# 전체 무시 후 관리 대상만 선택적으로 허용한다 (하위 프로젝트가 상위 git에 섞이는 것을 방지)
+# 전체 무시 후 관리 대상만 선택적으로 허용한다 (잡파일이 지침서에 섞이는 것을 방지)
 /*
 !/.gitignore
 !/README.md
 !/rutter.yaml
-!/.github/
 !/CLAUDE.md
 !/conventions/
 !/charts/
-!/repositories/
-/repositories/*
-!/repositories/.gitkeep
