@@ -1,0 +1,8 @@
+# 패키지 기본 values — 프로젝트의 values 파일·--set이 이 값을 덮어쓴다
+profile:
+  organization: followingseas
+  language: ko
+
+security:
+  signing:
+    required: false
