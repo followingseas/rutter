@@ -12,11 +12,11 @@ spec:
     paths: ["**"]
 
   rules:
-    - id: git.flow.github-flow
+    - id: git.branch.naming
       level: error
       category: workflow
-      statement: "main 단일 브랜치 GitHub Flow를 따른다 — 작업은 feature/<이름> 브랜치에서 PR을 거쳐 main에 머지한다."
-      rationale: "전 저장소 공통의 단순한 흐름이 리뷰·추적·자동화 분기를 일관되게 유지한다."
+      statement: "작업 브랜치는 feature/<이름> 형식을 사용한다."
+      rationale: "GitHub Flow(main 단일 브랜치, PR 머지)의 전제 조건 — 브랜치 이름이 일관돼야 리뷰·추적·자동화 분기가 일관된다. PR 머지 여부는 저장소 보호 규칙이 담당하고, 이 rule은 기계 검증 가능한 이름 규칙만 검사한다."
       examples:
         valid:
           - "feature/v2-release-engine"
@@ -35,3 +35,7 @@ spec:
       category: workflow
       statement: "커밋 메시지·PR·문서는 한글로 작성한다 (코드 식별자는 영어)."
       rationale: "조직의 일차 언어로 맥락을 남겨야 사람과 AI 모두 이유를 빠르게 파악한다."
+      checks:
+        - kind: regex
+          target: git.commit.message
+          pattern: "[가-힣]"

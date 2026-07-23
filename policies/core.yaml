@@ -19,7 +19,8 @@ spec:
       rationale: "Why 없는 규칙은 지켜지지 않는다 — 사람과 AI가 같은 이유 체계를 공유해야 규약 준수율이 오른다."
       checks:
         - kind: markdown-heading-present
-          target: docs/**
+          # 규약 문서만 대상 — 지도(docs/maps)는 조망 문서라 Why 섹션을 강제하지 않는다
+          target: docs/conventions/**
           heading: "Why"
 
     - id: docs.dual-audience
