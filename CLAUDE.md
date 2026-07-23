@@ -4,7 +4,7 @@
 
 ## 저장소 관리
 
-- rutter의 git은 지침 문서와 메타 파일만 관리한다 (`.gitignore`, `README.md`, `rutter.yaml`, `CLAUDE.md`, `conventions/`, `charts/`)
+- rutter의 git은 지침 문서와 메타 파일만 관리한다 (`.gitignore`, `README.md`, `rutter.yaml`, `CLAUDE.md`, `defaults.yaml`, `docs/`, `policies/`)
 - `.gitignore`는 전체 무시(`/*`) 후 관리 대상만 선택적으로 허용하는 구조다. **사용자가 명시적으로 요청하지 않는 한 절대 수정하지 않는다**
 - 조직 프로젝트는 이 저장소 밑에 클론하지 않는다 — 각 프로젝트는 임의 위치에서 [Pilot](https://github.com/followingseas/pilot)으로 이 지침서를 연결받는다 (`pilot connect` / `pilot init`)
 
@@ -12,7 +12,8 @@
 
 - 문서는 사람과 AI가 함께 읽는다. 사람이 읽기 좋게 쓰되, 에이전트가 그대로 실행할 수 있을 만큼 구체적으로 쓴다
 - 모든 규약 문서에는 **왜(Why)** 를 함께 적는다
-- 조직 구조가 바뀌면 `charts/`의 지도를 먼저 갱신한다
+- 조직 구조가 바뀌면 `docs/maps/`의 지도를 먼저 갱신한다
+- 기계 검증 가능한 규칙은 `policies/`의 PolicySet YAML(rule id·level·statement·rationale·checks)에도 등록한다 — 문서는 설명, PolicySet은 검증 담당
 
 ## Git 워크플로우
 

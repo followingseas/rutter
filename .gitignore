@@ -4,5 +4,6 @@
 !/README.md
 !/rutter.yaml
 !/CLAUDE.md
-!/conventions/
-!/charts/
+!/defaults.yaml
+!/docs/
+!/policies/
