@@ -43,9 +43,9 @@
 pilot connect https://github.com/followingseas/rutter --id followingseas
 cd <어느 프로젝트든>
 pilot context                    # 적용 규약 확인
-pilot init                       # 프로젝트에 선언 파일·스텁 생성
-pilot release install <이름>     # 릴리스로 설치 — lock·revision 기록
-pilot release template <이름>    # dry-run 렌더
+pilot init                       # 선언 파일 생성·연결 후 적용(apply)
+pilot apply                      # 재적용 — lock·revision 기록
+pilot diff                       # dry-run 렌더
 ```
 
 자기 조직의 rutter를 만들려면 이 저장소의 구조와 `rutter.yaml`을 본보기로 삼으면 됩니다.
