@@ -1,22 +1,13 @@
-apiVersion: rutter.followingseas.dev/v2alpha1
-kind: Package
+name: Followingseas Rutter
+version: 2.0.0
+scope: organization
+type: application
 
-metadata:
-  name: Followingseas Rutter
-  displayName: Followingseas Engineering Core
-  version: 2.0.0
-  description: 사람과 AI 에이전트가 함께 보는 Followingseas 조직 공용 정책 패키지
-
-package:
-  type: application
-  scope: organization
-
-sources:
-  docs:
-    conventions: docs/conventions
-    maps: docs/maps
-  policies:
-    dir: policies
+docs:
+  conventions: docs/conventions
+  maps: docs/maps
+policies: policies
+defaults: defaults.yaml
 
 repositories:
   - id: wake
@@ -25,7 +16,6 @@ repositories:
     remote: https://github.com/followingseas/pilot
 
 values:
-  defaultsFile: defaults.yaml
   merge:
     overrides:
       - path: /policies/rules

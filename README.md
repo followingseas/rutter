@@ -8,7 +8,7 @@
 
 | 구역 | 내용 |
 |------|------|
-| `rutter.yaml` | 패키지 manifest (v2 `Package`) — 이름·버전·scope·values·adapters 선언 |
+| `rutter.yaml` | 패키지 manifest — 이름·버전·scope·values·adapters 선언 |
 | `docs/conventions/` | 항로 규칙 — 커밋 메시지, 브랜치 전략(GitHub Flow), 코드 리뷰, 커뮤니케이션 언어 등 조직 공통 규약 |
 | `docs/maps/` | 연안 지도 — 프로젝트 맵, 저장소 인덱스, 아키텍처 개요 등 조직을 조망하는 문서 |
 | `policies/` | 기계 검증 가능한 정책(PolicySet) — rule id·level·statement·rationale·checks |
@@ -30,7 +30,7 @@
 
 초기 구축 중입니다. 규약과 지도가 채워지는 대로 이 README의 목차가 갱신됩니다.
 
-- `rutter.yaml` — Pilot이 읽는 v2 Package manifest
+- `rutter.yaml` — Pilot이 읽는 패키지 manifest
 - `docs/maps/projects.md` — 조직 저장소 조망 지도
 - `docs/conventions/documentation.md` — 문서 작성 규약
 - `policies/core.yaml` · `policies/git.yaml` — 기계 검증 가능한 조직 정책(PolicySet)
@@ -44,8 +44,8 @@ pilot connect https://github.com/followingseas/rutter --id followingseas
 cd <어느 프로젝트든>
 pilot context                    # 적용 규약 확인
 pilot init                       # 프로젝트에 선언 파일·스텁 생성
-pilot release install <이름>     # v2: 릴리스로 설치 — lock·revision 기록
-pilot release template <이름>    # v2: dry-run 렌더
+pilot release install <이름>     # 릴리스로 설치 — lock·revision 기록
+pilot release template <이름>    # dry-run 렌더
 ```
 
 자기 조직의 rutter를 만들려면 이 저장소의 구조와 `rutter.yaml`을 본보기로 삼으면 됩니다.
