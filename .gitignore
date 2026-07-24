@@ -7,3 +7,5 @@
 !/defaults.yaml
 !/docs/
 !/policies/
+!/.github/
+!/commitlint.config.mjs
