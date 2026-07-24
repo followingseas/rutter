@@ -29,3 +29,9 @@ rules:
     category: documentation
     statement: "조직 구조가 바뀌면 docs/maps의 지도를 먼저 갱신한다."
     rationale: "낡은 지도는 좌초를 부른다 — 지도가 현행을 반영해야 나머지 문서와 자동화가 신뢰를 얻는다."
+
+  - id: repo.hygiene
+    level: info
+    category: documentation
+    statement: "제품(대개 OSS) 저장소에는 제품 이해·기여에 필요한 것만 둔다 — 인프라·운영 도구나 AI 세션 잡음은 개인/private 저장소로 분리한다."
+    rationale: "공개 저장소의 신호 대 잡음비를 지킨다. 단 설계 근거(ADR·Why)는 잡음이 아니라 제품의 일부다 — 세션 노이즈와 설계 이유를 혼동하지 않는다."
