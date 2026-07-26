@@ -27,5 +27,5 @@ rules:
   - id: maps.update-first
     level: warn
     category: documentation
-    statement: "조직 구조가 바뀌면 docs/maps의 지도를 먼저 갱신한다."
-    rationale: "낡은 지도는 좌초를 부른다 — 지도가 현행을 반영해야 나머지 문서와 자동화가 신뢰를 얻는다."
+    statement: "조직 구조가 바뀌면(저장소 추가·폐지·성격 변경) rutter의 docs/maps 지도를 먼저 갱신한다."
+    rationale: "낡은 지도는 좌초를 부른다 — 지도가 현행을 반영해야 나머지 문서와 자동화가 신뢰를 얻는다. 지도 자체는 rutter 저장소에서 관리하며 각 저장소로 내려보내지 않는다."

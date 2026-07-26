@@ -4,8 +4,10 @@ scope: organization
 type: application
 
 docs:
+  # conventions만 에이전트 표면(CLAUDE.md·AGENTS.md)에 합성한다.
+  # docs/maps(조직 조망 지도)는 개별 저장소 작업에 필요한 규약이 아니라 참조 지식이므로
+  # 합성 대상에서 제외한다 — 지도는 이 저장소에서 직접 읽는다.
   conventions: docs/conventions
-  maps: docs/maps
 policies: policies
 defaults: defaults.yaml
 

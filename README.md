@@ -9,8 +9,8 @@
 | 구역 | 내용 |
 |------|------|
 | `rutter.yaml` | 패키지 manifest — 이름·버전·scope·values·adapters 선언 |
-| `docs/conventions/` | 항로 규칙 — 커밋 메시지, 브랜치 전략(GitHub Flow), 코드 리뷰, 커뮤니케이션 언어 등 조직 공통 규약 |
-| `docs/maps/` | 연안 지도 — 프로젝트 맵, 저장소 인덱스, 아키텍처 개요 등 조직을 조망하는 문서 |
+| `docs/conventions/` | 항로 규칙 — 커밋 메시지, 브랜치 전략(GitHub Flow), 코드 리뷰, 커뮤니케이션 언어 등 조직 공통 규약. **Pilot이 각 저장소에 합성해 내려보내는 대상** |
+| `docs/maps/` | 연안 지도 — 프로젝트 맵, 저장소 인덱스 등 조직을 조망하는 참조 문서. 개별 저장소 작업에 필요한 규약이 아니므로 **합성 대상이 아니며, 이 저장소에서 직접 읽는다** |
 | `policies/` | 기계 검증 가능한 정책(PolicySet) — rule id·level·statement·rationale·checks |
 | `defaults.yaml` | 패키지 기본 values — 프로젝트별 values가 덮어쓴다 |
 | `CLAUDE.md` | AI 승무원의 진입점 — AI 에이전트가 조직 저장소에서 작업할 때 따라야 할 지침의 시작점 |
@@ -24,7 +24,8 @@
 ## 사용법
 
 - **사람**: 조직에서 작업을 시작하기 전 `docs/conventions/`를 읽고, 길을 잃으면 `docs/maps/`를 펴세요
-- **AI 에이전트**: 각 저장소의 `CLAUDE.md`가 이 저장소의 해당 문서를 참조합니다. 규약 충돌 시 개별 저장소의 지침이 우선합니다
+- **AI 에이전트**: `pilot apply`가 `docs/conventions/`와 `policies/`를 각 저장소의 `CLAUDE.md`·`AGENTS.md`로 합성해 내려보냅니다. 규약 충돌 시 개별 저장소의 지침이 우선합니다
+- **조망 지도(`docs/maps/`)** 는 각 저장소로 내려보내지 않습니다 — 개별 저장소 작업에 필요한 규약이 아니라 조직 전체를 보는 참조 지식이라, 필요할 때 이 저장소에서 읽습니다
 
 ## 상태
 
