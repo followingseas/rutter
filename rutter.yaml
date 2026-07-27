@@ -16,6 +16,8 @@ repositories:
     remote: https://github.com/followingseas/wake
   - id: pilot
     remote: https://github.com/followingseas/pilot
+  - id: tiller
+    remote: https://github.com/followingseas/tiller
 
 values:
   merge:
