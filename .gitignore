@@ -5,7 +5,12 @@
 !/rutter.yaml
 !/CLAUDE.md
 !/defaults.yaml
+# docs/ 도 같은 원칙 — 통째로 무시하고 공개할 문서 디렉터리만 선택적으로 허용한다.
+# (세션 의도 기록 등 로컬 전용 산출물이 공용 지침서에 새지 않도록. docs/conventions/shipshape.md 참조)
 !/docs/
+/docs/*
+!/docs/conventions/
+!/docs/maps/
 !/policies/
 !/.github/
 !/commitlint.config.mjs
